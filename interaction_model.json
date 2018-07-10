@@ -1,0 +1,53 @@
+{
+     "interactionModel": {
+         "languageModel": {
+             "invocationName": "my colour picker",
+             "intents": [
+                 {
+                     "name": "AMAZON.FallbackIntent",
+                     "samples": []
+                 },
+                 {
+                     "name": "AMAZON.CancelIntent",
+                     "samples": []
+                 },
+                 {
+                     "name": "AMAZON.HelpIntent",
+                     "samples": []
+                 },
+                 {
+                     "name": "AMAZON.StopIntent",
+                     "samples": []
+                 },
+                 {
+                     "name": "WhatsMyColourIntent",
+                     "slots": [],
+                     "samples": [
+                         "tell me what is my favorite colour",
+                         "whats my favorite colour",
+                         "say my colour",
+                         "say my favorite colour",
+                         "tell me my favorite colour",
+                         "what is my favorite colour",
+                         "what is my colour",
+                         "whats my colour"
+                     ]
+                 },
+                 {
+                     "name": "MyColourIsIntent",
+                     "slots": [
+                         {
+                             "name": "Colour",
+                             "type": "AMAZON.Colour"
+                         }
+                     ],
+                     "samples": [
+                         "My colour is {Colour}",
+                         "my favorite colour is {Colour}"
+                     ]
+                 }
+             ],
+             "types": []
+         }
+     }
+ }

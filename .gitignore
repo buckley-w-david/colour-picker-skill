@@ -1,0 +1,13 @@
+# Build
+dist/
+node_modules/
+requirements.txt # Generate this file from the other stuff
+.serverless
+
+# Linting
+.mypy_cache/
+.pytest_cache/
+
+__pycache__/
+*.py[cod]
+*.egg-info

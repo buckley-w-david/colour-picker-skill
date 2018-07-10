@@ -1,0 +1,22 @@
+service: colour-picker
+
+
+provider:
+  name: aws
+  runtime: python3.6
+
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
+
+package:
+  include:
+    - colour_picker_skill/**
+
+functions:
+  colour-picker:
+    handler: colour_picker_skill/colour_picker.handler
+    events:
+      - alexaSkill: amzn1.ask.skill.47fe222a-1b8e-4eb0-8502-19778ededcb3
